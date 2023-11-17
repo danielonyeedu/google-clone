@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>html{visibility: hidden;opacity:0;background-color: #202124;}</style>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./images/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <header class="advanced-header">
+            <div class="header-left">
+                <img class="advanced-logo" src="./images/logo.png" alt="Google logo">
+            </div>
+            <div class="header-right">
+                <a href="./">Google Search</a>
+            </div>
+        </header>
+        <h3 class="advanced-header-title">Advanced Search</h3>
+        <div class="advanced-main">
+            <form action="https://www.google.com/search">
+                <table>
+                    <thead>
+                        <th>Find pages with...</th>
+                        <th>&nbsp;</th>
+                        <th>To do this in search</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="as_q">all these words:</label></td>
+                            <td><input id="as_q" type="text" name="as_q" autocomplete="off"></td>
+                            <td class="advanced-input-help">Type the important words: &nbsptricolor rat terrier</td>
+                        </tr>
+                        <tr>
+                            <td><label for="as_epq">this exact word or phrase:</label></td>
+                            <td><input id="as_epq" type="text" name="as_epq" autocomplete="off"></td>
+                            <td class="advanced-input-help">Put exact words in quotes: &nbsp"rat terrier"</td>
+                        </tr>
+                        <tr>
+                            <td><label for="as_oq">any of these words:</label></td>
+                            <td><input id="as_oq" type="text" name="as_oq" autocomplete="off"></td>
+                            <td class="advanced-input-help">Type OR between all the words you want: &nbspminiature OR standard</td>
+                        </tr>
+                        <tr>
+                            <td><label for="as_eq">none of these words:</label></td>
+                            <td><input id="as_eq" type="text" name="as_eq" autocomplete="off"></td>
+                            <td class="advanced-input-help">Put a minus sign just before words you don't want: &nbsp-rodent, -"Jack Russell"</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td> <button type="submit">Advanced Search</button></td>
+                        </tr>             
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="footer">
+            © Copyright Daniel Onyemelukwe 
+        </div>
+    </div>   
+</body>
+</html>

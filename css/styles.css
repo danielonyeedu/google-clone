@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    min-width: 400px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Roboto,arial,sans-serif;
+    color: #e8eaed;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2px 20px;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+header.advanced-header {
+    margin-bottom: 4px;
+}
+
+.advanced-header-title {
+    padding: 0 0 25px 20px;
+    border-bottom: 1px solid #525252;
+}
+
+header a {
+    text-decoration: none;
+    color: #bdc1c6;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.image-title {
+    color: #4487f6;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: absolute;
+    bottom: 5px;
+    left: 220px;
+}
+
+img.advanced-logo {
+    width: 82px;
+}
+
+form {
+    text-align: center;
+}
+
+th, td {
+    text-align: left;
+    font-family: arial,sans-serif;
+    padding-left: 20px;
+}
+
+td.advanced-input-help {
+    color: #8b8b8b;
+    font-size: 15px;
+}
+
+input {
+    color: inherit;
+}
+
+button[type="submit"] {
+    background-color: rgb(26,115,232);
+    color: #e8eaed;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button[type="submit"]:hover {
+    border: 1px solid white;
+} 
+
+input[type="text"] {
+    background-color: transparent;
+    min-width: 70ch;
+    line-height: 28px;
+    padding: 2px 8px 2px; 
+    border-radius: 10px;
+    border: 1px solid #5d5d5e;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 13px;
+    height: 5vh;
+}
+
+/* To stop FOUC */
+html {
+    visibility: visible;
+    opacity: 1;
+}
